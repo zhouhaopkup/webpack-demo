@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\n\nvar add = function add(a, b) {\n  return a + b;\n};\n\nconsole.log(add(1, 2));\n\n//# sourceURL=webpack://WebpackDemo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.scss */ \"./src/index.scss\");\n\n\nvar add = function add(a, b) {\n  return a + b;\n};\n\nconsole.log(add(1, 2));\nconsole.log(\"serviceWorker\" in navigator);\n\nif (\"serviceWorker\" in navigator) {\n  window.addEventListener(\"load\", function () {\n    navigator.serviceWorker.register(\"/service-worker.js\").then(function (registration) {\n      console.log(\"SW registered: \", registration);\n    })[\"catch\"](function (registrationError) {\n      console.log(\"SW registration failed: \", registrationError);\n    });\n  });\n}\n\n//# sourceURL=webpack://WebpackDemo/./src/index.js?");
 
 /***/ }),
 
